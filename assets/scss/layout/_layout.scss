@@ -54,6 +54,21 @@ nav.nav {
 
             ul.info {
                 font-size: 36px;
+
+                li.infoItem {
+                    .material-symbols-outlined {
+                        font-size: 36px;
+                        padding: 6px;
+                    }
+
+                    .MS-phone {
+                        vertical-align: middle;
+                    }
+
+                    .MS-mail {
+                        vertical-align: bottom;
+                    }
+                }
             }
         }
 
@@ -123,8 +138,6 @@ nav.nav {
                 }
             }
         }
-
-
     }
 
     .footer {
@@ -141,6 +154,13 @@ nav.nav {
 
                 ul.info {
                     font-size: 16px;
+
+                    li.infoItem {
+                        .material-symbols-outlined {
+                            font-size: 18px;
+                            padding: 3px;
+                        }
+                    }
                 }
             }
 
@@ -154,7 +174,6 @@ nav.nav {
                     }
                 }
             }
-
         }
 
         hr {

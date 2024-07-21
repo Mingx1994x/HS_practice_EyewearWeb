@@ -48,42 +48,23 @@
     }
 }
 
-.row {
-    margin-left: -12px;
-    margin-right: -12px;
-}
-
-.col-3,
-.col-4,
-.col-6,
-.col-12 {
-    padding-right: 12px;
-    padding-left: 12px;
-}
-
-.col-3 {
-    width: 25%;
-}
-
-.col-4 {
-    width: 33.333%;
-}
-
-.col-6 {
-    width: 50%;
-}
-
-.col-12 {
-    width: 100%;
-}
 
 // margin & paddin
 .ml-auto {
     margin-left: auto;
 }
 
+.mb-1 {
+    margin-bottom: 4px;
+}
+
 .mb-2 {
     margin-bottom: 8px;
+}
+
+// width
+.w-50 {
+    width: 50%;
 }
 
 // color
@@ -96,6 +77,10 @@
     background-color: var(--secondary);
 }
 
+.bg-danger {
+    background-color: var(--danger);
+}
+
 .bg-light {
     background-color: var(--light);
 }
@@ -106,6 +91,10 @@
 
 .text-primary {
     color: var(--primary);
+}
+
+.text-danger {
+    color: var(--danger);
 }
 
 .text-light {

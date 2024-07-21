@@ -4,11 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>眼鏡官網</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <%- include('./layout/nav'); -%>
 
-    <p>content</p>
+    <!-- banner -->
+    <section
+      class="banner bg-cover"
+      style="background-image: url(../assets/img/home-header.png)"
+    >
+      <div class="context container d-flex flex-column justify-content-center">
+        <div class="row d-flex justify-content-flex-end">
+          <div
+            class="col-6 d-flex flex-column justify-content-center align-items-flex-end"
+          >
+            <h2 class="text-danger mb-1">
+              Promise-Desert 2020 早春系列 <br />
+              <span>看得清，才能看得遠</span>
+            </h2>
+            <a href="#" class="bg-primary text-light">立即購買</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <%- include('./layout/footer'); -%>
 
