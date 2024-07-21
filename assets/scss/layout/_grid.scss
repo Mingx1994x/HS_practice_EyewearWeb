@@ -11,6 +11,7 @@
 .col-md-4,
 .col-6,
 .col-md-6,
+.col-md-10,
 .col-sm-12 {
     padding-right: 12px;
     padding-left: 12px;
@@ -28,7 +29,7 @@
     width: 50%;
 }
 
-@media screen and (max-width:991) {
+@media screen and (max-width:991px) {
     .col-md-3 {
         width: 25%;
     }
@@ -50,7 +51,7 @@
     }
 }
 
-@media screen and (max-width:767) {
+@media screen and (max-width:767px) {
     .col-sm-12 {
         width: 100%;
     }

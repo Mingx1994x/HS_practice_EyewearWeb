@@ -1,5 +1,6 @@
 // banner
 .banner {
+    background-image: url(../img/home-header.png);
     height: calc(100vh - 80px);
 
     .context {
@@ -12,6 +13,43 @@
             span {
                 font-size: 64px;
                 font-weight: 700;
+            }
+        }
+
+        a {
+            font-size: 20px;
+            display: block;
+            padding: 6px 12px;
+        }
+    }
+}
+
+@media screen and (max-width:991px) {
+    .banner {
+        background-image: url(../img/home-header-sm.png);
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    .banner {
+        height: calc(100vh - 180px);
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .banner {
+        height: 396px;
+
+        .context {
+
+            h2 {
+                font-size: 16px;
+
+                span {
+                    font-size: 24px;
+                }
             }
         }
     }

@@ -37,17 +37,20 @@
     }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:576px) {
     .container {
         max-width: 348px + 12px*2;
     }
+}
+
+// for nav跟footer區塊
+@media screen and (max-width:767px) {
 
     .container-sm {
         max-width: 100%;
         padding: 0;
     }
 }
-
 
 // margin & paddin
 .ml-auto {
