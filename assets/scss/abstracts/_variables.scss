@@ -1,0 +1,23 @@
+:root {
+    --primary: #aa0601;
+    --secondary: #fbf2f2;
+    --light: #fff;
+    --dark: #000;
+}
+
+// flexbox
+
+$justifys: (
+    flex-start,
+    center,
+    flex-end,
+    space-between,
+    space-around
+);
+$aligns: (
+    stretch,
+    flex-start,
+    center,
+    flex-end,
+    baseline
+);

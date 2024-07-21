@@ -1,0 +1,13 @@
+// flex
+@mixin flexDirection($dir) {
+    flex-direction: $dir;
+}
+
+@mixin justifyContent($justify: flex-start) {
+
+    justify-content: $justify;
+}
+
+@mixin alignItems($align: stretch) {
+    align-items: $align;
+}

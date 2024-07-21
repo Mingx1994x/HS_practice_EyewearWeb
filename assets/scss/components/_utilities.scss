@@ -1,0 +1,121 @@
+// flex
+.d-flex {
+    display: flex;
+}
+
+.d-none {
+    display: none;
+}
+
+.flex-column {
+    @include flexDirection(column);
+}
+
+@each $justify in $justifys {
+    .justify-content-#{$justify} {
+        @include justifyContent($justify);
+    }
+}
+
+@each $align in $aligns {
+    .align-items-#{$align} {
+        @include alignItems($align);
+    }
+}
+
+// container
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+@media screen and (max-width:991px) {
+    .container {
+        max-width: 696px + 12px*2;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .container {
+        max-width: 348px + 12px*2;
+    }
+
+    .container-sm {
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
+.row {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.col-3,
+.col-4,
+.col-6,
+.col-12 {
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.333%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+// margin & paddin
+.ml-auto {
+    margin-left: auto;
+}
+
+.mb-2 {
+    margin-bottom: 8px;
+}
+
+// color
+
+.bg-primary {
+    background-color: var(--primary);
+}
+
+.bg-secondary {
+    background-color: var(--secondary);
+}
+
+.bg-light {
+    background-color: var(--light);
+}
+
+.bg-dark {
+    background-color: var(--dark);
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.text-light {
+    color: var(--light);
+}
+
+// background
+
+.bg-cover {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
