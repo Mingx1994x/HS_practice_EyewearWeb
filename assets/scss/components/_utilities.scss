@@ -11,6 +11,10 @@
     @include flexDirection(column);
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
 @each $justify in $justifys {
     .justify-content-#{$justify} {
         @include justifyContent($justify);
@@ -65,6 +69,18 @@
     margin-bottom: 8px;
 }
 
+.mt-2 {
+    margin-top: 8px;
+}
+
+.mt-4 {
+    margin-top: 16px;
+}
+
+.mt-6 {
+    margin-top: 24px;
+}
+
 // width
 .w-50 {
     width: 50%;
@@ -110,4 +126,10 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+}
+
+// text-align
+
+.text-center {
+    text-align: center;
 }

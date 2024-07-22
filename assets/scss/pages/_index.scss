@@ -24,6 +24,31 @@
     }
 }
 
+// value
+.value {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    h3.slogan {
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+    ul.value-card {
+        li.value-cardItem {
+            img {
+                height: 100px;
+                width: 100px;
+            }
+
+            h4 {
+                font-size: 24px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
 @media screen and (max-width:991px) {
     .banner {
         background-image: url(../img/home-header-sm.png);
@@ -52,5 +77,15 @@
                 }
             }
         }
+    }
+
+    .value {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        h3.slogan {
+            font-size: 24px;
+        }
+
     }
 }
