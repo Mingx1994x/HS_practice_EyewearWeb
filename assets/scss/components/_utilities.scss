@@ -7,6 +7,10 @@
     display: none;
 }
 
+.d-block {
+    display: block;
+}
+
 .flex-column {
     @include flexDirection(column);
 }
@@ -69,6 +73,10 @@
     margin-bottom: 8px;
 }
 
+.mt-auto {
+    margin-top: auto;
+}
+
 .mt-2 {
     margin-top: 8px;
 }
@@ -79,6 +87,10 @@
 
 .mt-6 {
     margin-top: 24px;
+}
+
+.mt-12 {
+    margin-top: 48px;
 }
 
 // width

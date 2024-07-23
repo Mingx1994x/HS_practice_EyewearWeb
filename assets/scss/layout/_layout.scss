@@ -20,6 +20,10 @@ nav.nav {
                 font-size: 20px;
                 padding: 25px 30px;
             }
+
+            a.navLink:hover {
+                color: #0A0A0A;
+            }
         }
 
         li.navItem:nth-child(4) a.navLink {
@@ -44,6 +48,11 @@ nav.nav {
                     a.navLink {
                         display: block;
                         padding: 12px 24px;
+                        transition: 0.8s;
+                    }
+
+                    a.navLink:hover {
+                        color: #0A0A0A;
                     }
                 }
 
@@ -68,6 +77,11 @@ nav.nav {
                     .MS-mail {
                         vertical-align: bottom;
                     }
+
+                    a:hover {
+                        color: #0A0A0A;
+                        text-decoration: underline;
+                    }
                 }
             }
         }
@@ -81,6 +95,11 @@ nav.nav {
                 img {
                     width: 48px;
                     height: 48px;
+                    transition: 0.8s;
+                }
+
+                img:hover {
+                    transform: scale(1.2);
                 }
             }
         }
