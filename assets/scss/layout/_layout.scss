@@ -1,5 +1,5 @@
 // nav
-nav.nav {
+nav {
     h1 {
         a.logo {
             display: block;
@@ -34,7 +34,6 @@ nav.nav {
 
 
 // footer
-
 .footer {
     padding-top: 48px;
     padding-bottom: 32px;
@@ -129,10 +128,12 @@ nav.nav {
     }
 }
 
-// mobile
+// mobile 768px
 @media screen and (max-width:767px) {
-    nav.nav {
-        .container-sm {
+
+    // mobile nav
+    nav {
+        .nav {
             flex-direction: column;
             align-items: flex-start;
 
@@ -159,6 +160,7 @@ nav.nav {
         }
     }
 
+    // mobile 768px footer
     .footer {
         padding-top: 24px;
         padding-bottom: 24px;
@@ -182,17 +184,6 @@ nav.nav {
                     }
                 }
             }
-
-            .social {
-                .socialIcon {
-                    margin-left: 8px;
-
-                    img {
-                        width: 24px;
-                        height: 24px;
-                    }
-                }
-            }
         }
 
         hr {
@@ -207,6 +198,26 @@ nav.nav {
                 display: flex;
                 flex-direction: column;
                 gap: 8px;
+            }
+        }
+    }
+}
+
+// mobie 576px
+@media screen and (max-width:576px) {
+
+    // mobile 576px footer
+    .footer {
+        .footerNav {
+            .social {
+                .socialIcon {
+                    margin-left: 8px;
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
             }
         }
     }

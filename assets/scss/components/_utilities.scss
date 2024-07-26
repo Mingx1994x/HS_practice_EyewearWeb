@@ -45,12 +45,6 @@
     }
 }
 
-@media screen and (max-width:576px) {
-    .container {
-        max-width: 348px + 12px*2;
-    }
-}
-
 // for nav跟footer區塊
 @media screen and (max-width:767px) {
 
@@ -58,7 +52,34 @@
         max-width: 100%;
         padding: 0;
     }
+
+    .container-fluid {
+        max-width: 100%;
+        margin: 0 auto;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
 }
+
+@media screen and (max-width:576px) {
+    .container {
+        max-width: 348px + 12px*2;
+    }
+
+    .container-sm {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .container-fluid {
+        max-width: 100%;
+        margin: 0 auto;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+
 
 // margin & paddin
 .ml-auto {
