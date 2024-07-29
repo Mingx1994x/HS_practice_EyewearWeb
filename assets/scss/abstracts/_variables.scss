@@ -1,13 +1,24 @@
-:root {
-    --primary: #aa0601;
-    --secondary: #fbf2f2;
-    --danger: #650300;
-    --light: #fff;
-    --dark: #000;
-}
+// color
+$primary: #aa0601;
+$secondary: #fbf2f2;
+$danger: #650300;
+$light: #fff;
+$dark: #000;
+
+$p-sample1: #5F3E2D;
+$p-sample2: #B75929;
+
+$colors: (
+    primary:$primary,
+    secondary:$secondary,
+    danger:$danger,
+    light:$light,
+    dark:$dark,
+    p-sample1:$p-sample1,
+    p-sample2:$p-sample2
+);
 
 // flexbox
-
 $justifys: (
     flex-start,
     center,
@@ -22,3 +33,10 @@ $aligns: (
     flex-end,
     baseline
 );
+
+// margin$padding
+$space-num: 12;
+
+// grid
+$column-num: 12;
+$gutter: 24px;

@@ -1,0 +1,31 @@
+// optical
+
+main {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    h2 {
+        font-size: 42px;
+        font-weight: 500;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    @include media-sm {
+        main {
+            padding-top: 40px;
+            padding-bottom: 64px;
+        }
+
+        .pro-name {
+            margin-bottom: 24px;
+        }
+
+        h2,
+        h3 {
+            font-size: 24px;
+        }
+    }
+}

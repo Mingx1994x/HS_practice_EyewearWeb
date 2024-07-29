@@ -1,8 +1,4 @@
 // flex
-@mixin flexDirection($dir) {
-    flex-direction: $dir;
-}
-
 @mixin justifyContent($justify: flex-start) {
 
     justify-content: $justify;
@@ -16,4 +12,26 @@
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
+}
+
+// RWD
+// pad
+@mixin media-md {
+    @media screen and (max-width:991px) {
+        @content;
+    }
+}
+
+// large-mobile
+@mixin media-sm-larger {
+    @media screen and (max-width:767px) {
+        @content;
+    }
+}
+
+// mobile
+@mixin media-sm {
+    @media screen and (max-width:576px) {
+        @content;
+    }
 }

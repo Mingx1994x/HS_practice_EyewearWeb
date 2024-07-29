@@ -1,64 +1,38 @@
 // grid system
 
 .row {
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: - calc($gutter / 2);
+    margin-right: - calc($gutter / 2);
 }
 
-.col-3,
-.col-md-3,
-.col-4,
-.col-md-4,
-.col-6,
-.col-md-6,
-.col-md-10,
-.col-sm-12 {
-    padding-right: 12px;
-    padding-left: 12px;
-}
-
-.col-3 {
-    width: 25%;
-}
-
-.col-4 {
-    width: 33.333%;
-}
-
-.col-6 {
-    width: 50%;
-}
-
-@media screen and (max-width:991px) {
-    .col-md-3 {
-        width: 25%;
+@for $i from 1 through $column-num {
+    .col-#{$i} {
+        width: calc($i / $column-num) * 100%;
+        padding-right: calc($gutter / 2);
+        padding-left: calc($gutter / 2);
     }
 
-    .col-md-4 {
-        width: 33.333%;
+    .col-md-#{$i} {
+        @include media-md {
+            width: calc($i / $column-num) * 100%;
+            padding-right: calc($gutter / 2);
+            padding-left: calc($gutter / 2);
+        }
     }
 
-    .col-md-6 {
-        width: 50%;
+    .col-sm-#{$i} {
+        @include media-sm-larger {
+            width: calc($i / $column-num) * 100%;
+            padding-right: calc($gutter / 2);
+            padding-left: calc($gutter / 2);
+        }
     }
 
-    .col-md-10 {
-        width: 83.333%;
-    }
-
-    .col-md-12 {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width:767px) {
-    .col-sm-12 {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width:575px) {
-    .col-xs-12 {
-        width: 100%;
+    .col-xs-#{$i} {
+        @include media-sm {
+            width: calc($i / $column-num) * 100%;
+            padding-right: calc($gutter / 2);
+            padding-left: calc($gutter / 2);
+        }
     }
 }

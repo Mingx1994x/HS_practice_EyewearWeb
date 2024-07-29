@@ -23,8 +23,8 @@
         }
 
         a:hover {
-            color: var(--secondary);
-            background-color: var(--danger);
+            color: $secondary;
+            background-color: $danger;
         }
     }
 }
@@ -134,7 +134,7 @@
     }
 
     .summit-btn:hover {
-        background-color: var(--danger);
+        background-color: $danger;
     }
 }
 

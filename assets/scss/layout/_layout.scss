@@ -1,5 +1,5 @@
 // nav
-nav {
+.nav {
     h1 {
         a.logo {
             display: block;
@@ -10,27 +10,28 @@ nav {
             white-space: nowrap;
         }
     }
+}
 
+.nav {
     ul.navbar {
         gap: 4px;
 
-        li.navItem {
-            a.navLink {
-                display: block;
-                font-size: 20px;
-                padding: 25px 30px;
-            }
-
-            a.navLink:hover {
-                color: #0A0A0A;
-            }
+        a.navLink {
+            display: block;
+            font-size: 20px;
+            padding: 25px 30px;
         }
 
-        li.navItem:nth-child(4) a.navLink {
-            padding-right: 0;
+        a.navLink:hover {
+            color: #0A0A0A;
         }
+
+        // li.navItem:nth-child(4) a.navLink {
+        //     padding-right: 0;
+        // }
     }
 }
+
 
 
 // footer
@@ -40,185 +41,222 @@ nav {
 
     .footerNav {
         margin-bottom: 32px;
-
-        .footerLink {
-            ul.navbar {
-                li.navItem {
-                    a.navLink {
-                        display: block;
-                        padding: 12px 24px;
-                        transition: 0.8s;
-                    }
-
-                    a.navLink:hover {
-                        color: #0A0A0A;
-                    }
-                }
-
-                li.navItem:nth-child(1) a.navLink {
-                    padding-left: 0;
-                }
-            }
-
-            ul.info {
-                font-size: 36px;
-
-                li.infoItem {
-                    .material-symbols-outlined {
-                        font-size: 36px;
-                        padding: 6px;
-                    }
-
-                    .MS-phone {
-                        vertical-align: middle;
-                    }
-
-                    .MS-mail {
-                        vertical-align: bottom;
-                    }
-
-                    a:hover {
-                        color: #0A0A0A;
-                        text-decoration: underline;
-                    }
-                }
-            }
-        }
-
-        .social {
-            height: 100%;
-
-            .socialIcon {
-                margin-left: 32px;
-
-                img {
-                    width: 48px;
-                    height: 48px;
-                    transition: 0.8s;
-                }
-
-                img:hover {
-                    transform: scale(1.2);
-                }
-            }
-        }
     }
 
     hr {
         margin-bottom: 32px;
     }
-
 }
 
-// pad
-@media screen and (max-width:991px) {
-    .footer {
-        .footerNav {
-            .social {
-                .socialIcon {
-                    margin-left: 16px;
+.footerLink {
+    ul.navbar {
+        margin-bottom: 24px;
 
-                    img {
-                        width: 40px;
-                        height: 40px;
-                    }
-                }
+        a.navLink {
+            display: block;
+            padding: 12px 24px;
+            transition: 0.8s;
+        }
+
+        a.navLink:hover {
+            color: #0A0A0A;
+        }
+
+    }
+
+    ul.info {
+        font-size: 36px;
+
+        li.infoItem {
+            .material-symbols-outlined {
+                font-size: 36px;
+                padding: 6px;
+            }
+
+            .MS-phone {
+                vertical-align: middle;
+            }
+
+            .MS-mail {
+                vertical-align: bottom;
+            }
+
+            a:hover {
+                color: #0A0A0A;
+                text-decoration: underline;
             }
         }
     }
+}
+
+.social {
+    height: 100%;
+
+    .socialIcon {
+        margin-left: 32px;
+
+        img {
+            width: 48px;
+            height: 48px;
+            transition: 0.8s;
+        }
+
+        img:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+
+// pad
+@media screen and (max-width:991px) {
+    .footerLink {
+        ul.navbar {
+            margin-bottom: 20px;
+
+            a.navLink {
+                font-size: 16px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+        }
+
+    }
+
+    .social {
+        .socialIcon {
+            margin-left: 16px;
+
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+
 }
 
 // mobile 768px
 @media screen and (max-width:767px) {
 
     // mobile nav
-    nav {
-        .nav {
-            flex-direction: column;
-            align-items: flex-start;
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
 
-            h1 {
-                padding: 15px;
-            }
+        h1 {
+            padding: 15px;
+        }
+    }
 
-            ul.navbar {
-                flex-wrap: wrap;
-                gap: 0;
-                width: 100%;
+    .nav {
+        ul.navbar {
+            flex-wrap: wrap;
+            gap: 0;
+            width: 100%;
 
-                li.navItem {
-                    width: 50%;
-                    text-align: center;
+            li.navItem {
+                width: 50%;
+                text-align: center;
 
-                    a.navLink {
-                        font-size: 16px;
-                        padding: 12px 0;
-                        border: 1px solid #fff;
-                    }
+                a.navLink {
+                    font-size: 16px;
+                    padding: 12px 0;
+                    border: 1px solid #fff;
                 }
             }
         }
     }
 
-    // mobile 768px footer
+    // mobile footer
     .footer {
         padding-top: 24px;
         padding-bottom: 24px;
-
-        .footerNav {
-            margin-bottom: 24px;
-
-            .footerLink {
-                ul.navbar {
-                    display: none;
-                }
-
-                ul.info {
-                    font-size: 16px;
-
-                    li.infoItem {
-                        .material-symbols-outlined {
-                            font-size: 18px;
-                            padding: 3px;
-                        }
-                    }
-                }
-            }
-        }
 
         hr {
             margin-bottom: 16px;
         }
 
-        .copyright {
+    }
+
+    .footerNav {
+        margin-bottom: 24px;
+
+        .footerLink {
+            ul.navbar {
+                display: none;
+            }
+
+            ul.info {
+                font-size: 16px;
+
+                li.infoItem {
+                    .material-symbols-outlined {
+                        font-size: 18px;
+                        padding: 3px;
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        flex-direction: column;
+        gap: 8px;
+
+        .privacy {
+            display: flex;
             flex-direction: column;
             gap: 8px;
+        }
+    }
+}
 
-            .privacy {
-                display: flex;
-                flex-direction: column;
-                gap: 8px;
+// mobile 576px
+@media screen and (max-width:576px) {
+
+    // mobile 576px footer
+    .footerNav {
+        .social {
+            .socialIcon {
+                margin-left: 8px;
+
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
             }
         }
     }
 }
 
-// mobie 576px
-@media screen and (max-width:576px) {
 
-    // mobile 576px footer
-    .footer {
-        .footerNav {
-            .social {
-                .socialIcon {
-                    margin-left: 8px;
+// product menu
+ul.menu {
+    li {
+        width: 33.333%;
+        border: 1px solid #DCDCDC;
+        border-bottom: 8px solid rgba(0, 0, 0, 0);
+    }
 
-                    img {
-                        width: 24px;
-                        height: 24px;
-                    }
-                }
-            }
+    li.active {
+        border-bottom: 8px solid $primary;
+    }
+
+    a.menuLink {
+        font-size: 32px;
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 16px;
+
+        @include media-md {
+            font-size: 24px;
+            padding-top: 16px;
+            padding-bottom: 8px;
+        }
+
+        @include media-sm {
+            font-size: 16px;
         }
     }
 }

@@ -12,19 +12,21 @@
 }
 
 .flex-column {
-    @include flexDirection(column);
+    flex-direction: column;
 }
 
 .flex-wrap {
     flex-wrap: wrap;
 }
 
+// justify-content-$justifys
 @each $justify in $justifys {
     .justify-content-#{$justify} {
         @include justifyContent($justify);
     }
 }
 
+// align-items-$aligns
 @each $align in $aligns {
     .align-items-#{$align} {
         @include alignItems($align);
@@ -35,83 +37,82 @@
 .container {
     max-width: 1320px;
     margin: 0 auto;
-    padding-right: 12px;
-    padding-left: 12px;
-}
+    padding-right: calc($gutter / 2);
+    padding-left: calc($gutter / 2);
 
-@media screen and (max-width:991px) {
-    .container {
-        max-width: 696px + 12px*2;
+    @include media-md {
+        max-width: 696px + calc($gutter / 2) * 2;
+    }
+
+    @include media-sm {
+        max-width: 348px + calc($gutter / 2) * 2;
     }
 }
 
-// for nav跟footer區塊
-@media screen and (max-width:767px) {
+.container-sm {
 
-    .container-sm {
+    // nav
+    @include media-sm-larger {
         max-width: 100%;
         padding: 0;
     }
 
-    .container-fluid {
-        max-width: 100%;
-        margin: 0 auto;
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-}
-
-@media screen and (max-width:576px) {
-    .container {
-        max-width: 348px + 12px*2;
-    }
-
-    .container-sm {
+    @include media-sm {
         max-width: 100%;
         padding: 0;
     }
+}
 
-    .container-fluid {
+.container-fluid {
+
+    // footer
+    @include media-md {
         max-width: 100%;
         margin: 0 auto;
-        padding-left: 12px;
-        padding-right: 12px;
+        padding-left: calc($gutter / 2);
+        padding-right: calc($gutter / 2);
+    }
+
+    @include media-sm-larger {
+        max-width: 100%;
+        margin: 0 auto;
+        padding-left: calc($gutter / 2);
+        padding-right: calc($gutter / 2);
+    }
+
+    @include media-sm {
+        max-width: 100%;
+        margin: 0 auto;
+        padding-left: calc($gutter / 2);
+        padding-right: calc($gutter / 2);
     }
 }
 
-
-
-// margin & paddin
+// margin & padding
 .ml-auto {
     margin-left: auto;
-}
-
-.mb-1 {
-    margin-bottom: 4px;
-}
-
-.mb-2 {
-    margin-bottom: 8px;
 }
 
 .mt-auto {
     margin-top: auto;
 }
 
-.mt-2 {
-    margin-top: 8px;
-}
+@for $i from 1 through $space-num {
+    .mt-#{$i} {
+        margin-top: $i * 4px;
+    }
 
-.mt-4 {
-    margin-top: 16px;
-}
+    .mb-#{$i} {
+        margin-bottom: $i * 4px;
+    }
 
-.mt-6 {
-    margin-top: 24px;
-}
+    .ml-#{$i} {
+        margin-left: $i * 4px;
+    }
 
-.mt-12 {
-    margin-top: 48px;
+    .mr-#{$i} {
+        margin-right: $i * 4px;
+    }
 }
 
 // width
@@ -120,38 +121,47 @@
 }
 
 // color
+@each $name, $color in $colors {
+    .bg-#{$name} {
+        background-color: $color;
+    }
 
-.bg-primary {
-    background-color: var(--primary);
+    .text-#{$name} {
+        color: $color;
+    }
 }
 
-.bg-secondary {
-    background-color: var(--secondary);
-}
+// .bg-primary {
+//     background-color: $primary;
+// }
 
-.bg-danger {
-    background-color: var(--danger);
-}
+// .bg-secondary {
+//     background-color: $secondary;
+// }
 
-.bg-light {
-    background-color: var(--light);
-}
+// .bg-danger {
+//     background-color: $danger;
+// }
 
-.bg-dark {
-    background-color: var(--dark);
-}
+// .bg-light {
+//     background-color: $light;
+// }
 
-.text-primary {
-    color: var(--primary);
-}
+// .bg-dark {
+//     background-color: $dark;
+// }
 
-.text-danger {
-    color: var(--danger);
-}
+// .text-primary {
+//     color: $primary;
+// }
 
-.text-light {
-    color: var(--light);
-}
+// .text-danger {
+//     color: $danger;
+// }
+
+// .text-light {
+//     color: $light;
+// }
 
 // background
 

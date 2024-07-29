@@ -1,0 +1,27 @@
+.product-card-group {
+    margin-bottom: 80px;
+    row-gap: 80px;
+
+    p {
+        font-size: 24px;
+
+        span {
+            font-weight: 500;
+        }
+    }
+
+    .colorSample {
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+    }
+
+    @include media-md {
+        row-gap: 40px;
+    }
+
+    @include media-sm {
+        margin-bottom: 64px;
+        row-gap: 24px;
+    }
+}
