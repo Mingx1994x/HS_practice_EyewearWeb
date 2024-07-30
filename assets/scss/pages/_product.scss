@@ -14,18 +14,17 @@ main {
     }
 
     @include media-sm {
-        main {
-            padding-top: 40px;
-            padding-bottom: 64px;
+        padding-top: 40px;
+        padding-bottom: 64px;
+
+        h2,
+        h3 {
+            font-size: 24px;
         }
 
         .pro-name {
             margin-bottom: 24px;
         }
 
-        h2,
-        h3 {
-            font-size: 24px;
-        }
     }
 }

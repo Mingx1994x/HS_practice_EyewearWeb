@@ -15,6 +15,19 @@
 }
 
 // RWD
+// PC
+@mixin media-xl {
+    @media screen and (max-width:1399px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (max-width:1199px) {
+        @content;
+    }
+}
+
 // pad
 @mixin media-md {
     @media screen and (max-width:991px) {

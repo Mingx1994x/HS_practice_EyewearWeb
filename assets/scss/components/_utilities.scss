@@ -49,6 +49,27 @@
     }
 }
 
+.container-xl {
+    @include media-xl {
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
+.container-lg {
+    @include media-lg {
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
+.container-md {
+    @include media-md {
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
 .container-sm {
 
     // nav
