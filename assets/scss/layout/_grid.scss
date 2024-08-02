@@ -12,6 +12,22 @@
         padding-left: calc($gutter / 2);
     }
 
+    .col-xl-#{$i} {
+        @include media-xl {
+            width: calc($i / $column-num) * 100%;
+            padding-right: calc($gutter / 2);
+            padding-left: calc($gutter / 2);
+        }
+    }
+
+    .col-lg-#{$i} {
+        @include media-lg {
+            width: calc($i / $column-num) * 100%;
+            padding-right: calc($gutter / 2);
+            padding-left: calc($gutter / 2);
+        }
+    }
+
     .col-md-#{$i} {
         @include media-md {
             width: calc($i / $column-num) * 100%;

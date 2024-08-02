@@ -63,3 +63,33 @@ ul.pagination {
 
     }
 }
+
+// store-card
+.card {
+    height: 100%;
+
+    h3 {
+        font-size: 24px;
+        padding: 8px 24px;
+        border: 1px solid #00000020;
+    }
+
+    &-context {
+        border: 1px solid #00000020;
+        // height: 100%;
+
+        .text {
+            height: 168px;
+            // height: 100%;
+            font-size: 20px;
+            padding: 16px 24px;
+        }
+
+        a.info-link {
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+    }
+
+
+}

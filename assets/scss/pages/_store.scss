@@ -1,0 +1,70 @@
+.store {
+    .selectArea {
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+
+        label {
+            font-size: 24px;
+            margin-right: 16px;
+
+            @include media-sm {
+                font-size: 16px;
+                margin-right: 8px;
+            }
+        }
+
+        select {
+
+            // flex-basis: 304px;
+            width: 304px;
+            border: 1px solid #CED4DA;
+            color: #495057;
+            font-size: 18px;
+            padding: 6px 12px;
+
+
+            @include media-sm {
+                // flex-basis: 276px;
+                width: calc(100% - 16px * 4 - 8px);
+                ;
+            }
+        }
+
+        @include media-sm {
+            margin-bottom: 24px;
+        }
+    }
+
+    .store-group {
+        row-gap: 48px;
+
+        @include media-md {
+            row-gap: 24px;
+        }
+    }
+
+    // location
+    .locationCard {
+
+        @include media-md {
+            @include flexbox();
+            margin-right: -12px;
+            margin-left: -12px;
+        }
+
+        @include media-sm-larger {
+            @include flexbox(column);
+        }
+    }
+
+    .locationMap {
+        @include media-md {
+            height: 414px;
+        }
+
+        @include media-sm {
+            height: 208px;
+        }
+    }
+}
