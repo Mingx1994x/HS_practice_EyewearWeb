@@ -1,0 +1,87 @@
+.rowTrans-card-group {
+    margin-bottom: 124px;
+
+    @include media-md {
+        margin-bottom: 80px;
+    }
+
+    @include media-sm {
+        margin-bottom: 64px;
+    }
+}
+
+.rowTrans-card {
+    margin-bottom: 60px;
+
+    .card-title {
+        font-size: 32px;
+
+        @include media-md {
+            font-size: 24px;
+        }
+    }
+
+    .card-subgroup {
+        font-weight: 500;
+        margin-bottom: 16px;
+
+        .card-subtitle {
+            font-size: 24px;
+
+            @include media-md {
+                font-size: 16px;
+            }
+        }
+
+        @include media-md {
+            margin-bottom: 4px;
+        }
+    }
+
+    .card-text {
+        @include media-md {
+            // position: relative;
+            overflow: hidden;
+
+            p {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                /* 兼容 WebKit 的浏览器 */
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 6;
+            }
+        }
+
+        @include media-sm {
+            display: none;
+        }
+
+        // a.show-text {
+        //     display: none;
+
+        //     @include media-md {
+        //         display: inline-block;
+        //         color: $p-page;
+        //     }
+        // }
+    }
+
+    a.text-danger {
+        font-size: 36px;
+        font-weight: 900;
+
+        @include media-md {
+            display: none;
+        }
+    }
+
+    @include media-md {
+        margin-bottom: 24px;
+    }
+
+    @include media-sm-larger {
+        flex-direction: column;
+        row-gap: 8px;
+    }
+}

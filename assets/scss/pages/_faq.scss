@@ -1,0 +1,17 @@
+.faq {
+    li {
+        margin-bottom: 32px;
+
+        @include media-sm {
+            margin-bottom: 24px;
+        }
+    }
+
+    h4 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+
+
+}
