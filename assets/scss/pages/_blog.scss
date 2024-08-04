@@ -1,4 +1,49 @@
+// blog-menu
+ul.blog-menu {
+
+    a.menuLink {
+        font-size: 20px;
+        font-weight: 700;
+        display: block;
+        padding: 12px 6px;
+
+        @include media-sm {
+            font-size: 16px;
+            margin-left: 0;
+        }
+    }
+
+    li:last-child {
+        a.menuLink {
+            // font-size: 30px;
+            display: block;
+            padding: 8px;
+            margin-right: 20px;
+        }
+    }
+
+    @include media-sm-larger {
+        display: none;
+    }
+
+    &.article-menu {
+        @include media-sm-larger {
+            @include flexbox(row, center, center);
+
+            li:last-child {
+                display: none;
+            }
+        }
+
+        @include media-sm {
+            @include flexbox($justify: space-between, $align: center);
+        }
+    }
+}
+
+// blog-card
 .rowTrans-card-group {
+
     margin-bottom: 124px;
 
     @include media-md {
@@ -40,14 +85,12 @@
 
     .card-text {
         @include media-md {
-            // position: relative;
             overflow: hidden;
 
             p {
                 overflow: hidden;
                 text-overflow: ellipsis;
                 display: -webkit-box;
-                /* 兼容 WebKit 的浏览器 */
                 -webkit-box-orient: vertical;
                 -webkit-line-clamp: 6;
             }
@@ -56,15 +99,6 @@
         @include media-sm {
             display: none;
         }
-
-        // a.show-text {
-        //     display: none;
-
-        //     @include media-md {
-        //         display: inline-block;
-        //         color: $p-page;
-        //     }
-        // }
     }
 
     a.text-danger {
@@ -84,4 +118,128 @@
         flex-direction: column;
         row-gap: 8px;
     }
+}
+
+// blog-article
+.blog-article {
+    padding-top: 0;
+    padding-bottom: 80px;
+
+    @include media-sm {
+        padding-bottom: 64px;
+    }
+
+    .navPath {
+        font-size: 24px;
+
+        @include media-md {
+            margin-top: 8px;
+        }
+
+        @include media-sm {
+            font-size: 16px;
+            margin-top: 16px;
+        }
+    }
+
+    .navTag {
+        gap: 15px;
+    }
+
+    .article-title {
+        font-size: 48px;
+
+        @include media-sm {
+            font-size: 24px;
+        }
+    }
+
+    .article-subtitle {
+        font-size: 24px;
+
+        @include media-sm {
+            font-size: 16px;
+        }
+    }
+
+
+}
+
+.article-card-group {
+
+    row-gap: 40px;
+
+    @include media-md {
+        margin-top: 24px;
+        row-gap: 24px;
+    }
+
+    @include media-sm {
+        margin-top: 16px;
+        row-gap: 16px;
+    }
+
+    .article-card-context {
+        margin-top: 8px;
+
+        @include media-md {
+            margin-top: 16px;
+        }
+
+        @include media-sm {
+            margin-top: 8px;
+        }
+    }
+}
+
+.aside {
+
+    .aside-title {
+        font-size: 32px;
+        font-weight: 700;
+
+        .material-symbols-outlined {
+            font-size: 32px;
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 700,
+                'GRAD' 0,
+                'opsz' 40
+        }
+
+        @include media-md {
+            font-size: 16px;
+
+            .material-symbols-outlined {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .aside-tags {
+        font-size: 24px;
+        column-gap: 24px;
+        flex-wrap: wrap;
+
+        @include media-md {
+            font-size: 16px;
+            column-gap: 16px;
+        }
+    }
+
+    @include media-sm {
+        display: none;
+    }
+}
+
+.article-link {
+    img.social-logo {
+        height: 24px;
+        width: 24px;
+    }
+
+    @include media-sm {
+        display: none;
+    }
+
 }

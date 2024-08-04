@@ -11,15 +11,40 @@
   </head>
   <body>
     <%- include('./layout/nav'); -%>
-
-    <!-- store -->
-    <main class="store">
+        <!-- blog_menu -->
+    <section class="bg-danger">
+      <div class="container container-sm">
+        <ul class="blog-menu d-flex align-items-center">
+          <li>
+            <a href="#" class="menuLink text-light">最新消息</a>
+          </li>
+          <li>
+            <a href="#" class="menuLink text-light ml-9">特別企劃</a>
+          </li>
+          <li>
+            <a href="#" class="menuLink text-light ml-9">新品上市</a>
+          </li>
+          <li>
+            <a href="#" class="menuLink text-light ml-9">鏡框小知識</a>
+          </li>
+          <li class="ml-auto">
+            <a href="#" class="menuLink text-light"><span class="material-symbols-outlined vertical-middle">
+search
+</span></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--main blog -->
+    <main class="blog">
       <div class="container">
         <h2 class="mainTitle">部落格</h2>
         <ul class="rowTrans-card-group">
             <li class="rowTrans-card row d-flex">
                 <div class="col-6 col-sm-12">
-                    <img src="../assets/img/blog-1.png" alt="blog1-cover" class="card-img">
+                    <a href="./blog-article.html">
+                        <img src="../assets/img/blog-1.png" alt="blog1-cover" class="card-img">
+                    </a>
                 </div>
                 <div class="card-body col-6 col-sm-12  d-flex flex-column">
                     <h3 class="card-title text-danger">情人特別企劃</h3>
@@ -35,7 +60,9 @@
             </li>        
             <li class="rowTrans-card row d-flex">
             <div class="col-6 col-sm-12">
-                <img src="../assets/img/blog-2.png" alt="blog2-cover" class="card-img">
+                <a href="./blog-article.html">
+                    <img src="../assets/img/blog-2.png" alt="blog2-cover" class="card-img">
+                </a>
             </div>
             <div class="card-body col-6 col-sm-12  d-flex flex-column">
                 <h3 class="card-title text-danger">街頭潮人訪問</h3>
@@ -51,7 +78,9 @@
         </li>
         <li class="rowTrans-card row d-flex">
             <div class="col-6 col-sm-12">
-                <img src="../assets/img/blog-3.png" alt="blog3-cover" class="card-img">
+                <a href="./blog-article.html">
+                    <img src="../assets/img/blog-3.png" alt="blog3-cover" class="card-img">
+                </a>
             </div>
             <div class="card-body col-6 col-sm-12  d-flex flex-column">
                 <h3 class="card-title text-danger">春季新品上市</h3>
@@ -67,7 +96,9 @@
         </li>
         <li class="rowTrans-card row d-flex">
             <div class="col-6 col-sm-12">
-                <img src="../assets/img/blog-4.png" alt="blog4-cover" class="card-img">
+                <a href="./blog-article.html">
+                    <img src="../assets/img/blog-4.png" alt="blog4-cover" class="card-img">
+                </a>
             </div>
             <div class="card-body col-6 col-sm-12  d-flex flex-column">
                 <h3 class="card-title text-danger">設計師獨享鏡框優惠</h3>
@@ -83,7 +114,9 @@
         </li>
         <li class="rowTrans-card row d-flex">
             <div class="col-6 col-sm-12">
-                <img src="../assets/img/blog-5.png" alt="blog5-cover" class="card-img">
+                <a href="./blog-article.html">
+                    <img src="../assets/img/blog-5.png" alt="blog5-cover" class="card-img">
+                </a>
             </div>
             <div class="card-body col-6 col-sm-12  d-flex flex-column">
                 <h3 class="card-title text-danger">抵抗夏日大作戰</h3>

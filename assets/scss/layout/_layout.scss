@@ -32,23 +32,6 @@
     }
 }
 
-// main
-main {
-    .mainTitle {
-        font-size: 48px;
-        margin-bottom: 32px;
-        padding-left: 16px;
-        border-left: 8px solid #9F1213;
-    }
-
-    .subTitle {
-        font-size: 24px;
-        font-weight: 700;
-        margin-bottom: 24px;
-    }
-}
-
-
 // footer
 .footer {
     padding-top: 48px;
@@ -245,33 +228,21 @@ main {
     }
 }
 
+// store,blog,faq main
+main {
+    padding-top: 96px;
+    padding-bottom: 80px;
 
-// product menu
-ul.menu {
-    li {
-        width: 33.333%;
-        border: 1px solid #DCDCDC;
-        border-bottom: 8px solid rgba(0, 0, 0, 0);
+    .mainTitle {
+        font-size: 48px;
+        margin-bottom: 32px;
+        padding-left: 16px;
+        border-left: 8px solid #9F1213;
     }
 
-    li.active {
-        border-bottom: 8px solid $primary;
-    }
-
-    a.menuLink {
-        font-size: 32px;
-        display: block;
-        padding-top: 24px;
-        padding-bottom: 16px;
-
-        @include media-md {
-            font-size: 24px;
-            padding-top: 16px;
-            padding-bottom: 8px;
-        }
-
-        @include media-sm {
-            font-size: 16px;
-        }
+    .subTitle {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 24px;
     }
 }

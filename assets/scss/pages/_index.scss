@@ -56,6 +56,10 @@
 // value
 .value {
     ul.value-card {
+        @include media-md {
+            row-gap: 24px;
+        }
+
         li.value-cardItem {
             img {
                 height: 100px;
