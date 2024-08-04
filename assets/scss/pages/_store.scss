@@ -45,19 +45,6 @@
     }
 
     // location
-    .locationCard {
-
-        @include media-md {
-            @include flexbox();
-            margin-right: -12px;
-            margin-left: -12px;
-        }
-
-        @include media-sm-larger {
-            @include flexbox(column);
-        }
-    }
-
     .locationMap {
         @include media-md {
             height: 414px;
